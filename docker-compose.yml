@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: couser-micro-sass
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    command: >
+      sh -c "npm run dev"
