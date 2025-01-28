@@ -8,6 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1366px',
+      },
+      maxWidth:{
+        '7xl':'1366px',
+      },
       colors: {
         "background-primary": "#050505",
         "background-secondary": "#0F0F10",
@@ -21,7 +30,7 @@ export default {
         "accent-purple": "#4B2DBB",
         "accent-green": "#87BB2D",
         "accent-pink": "#B5446B"
-      },
+      }
     },
   },
   plugins: [],
